@@ -1,0 +1,521 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #142b4a;
+    background-color: #ffffff;
+}
+
+
+/* MENU */
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.regional {
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #142b4a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: white;
+    background-color: #083b7a;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+
+/* TELA INICIAL */
+
+.hero {
+    min-height: 570px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #ffffff, #e8f5ff);
+}
+
+.hero-texto {
+    width: 52%;
+}
+
+.novo {
+    display: inline-block;
+    background-color: #1685d1;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.05;
+    color: #082d6b;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #1265a8;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+.whatsapp-texto {
+    color: #087d39;
+    font-weight: bold;
+    font-size: 20px !important;
+    margin: 20px 0;
+}
+
+.whatsapp-texto i {
+    font-size: 25px;
+}
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #087d39;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #05632c;
+}
+
+.hero-imagem {
+    width: 42%;
+    text-align: center;
+}
+
+.hero-imagem img {
+    max-width: 100%;
+    max-height: 450px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 70px 10%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.titulo-secao {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.linha {
+    width: 6px;
+    height: 90px;
+    background-color: #0d76c4;
+    border-radius: 5px;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+    color: #082d6b;
+}
+
+.texto-sobre {
+    width: 60%;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.texto-sobre p {
+    margin-bottom: 15px;
+}
+
+
+/* FUNCIONALIDADES */
+
+.funcionalidades {
+    background-color: #f5f9fc;
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.funcionalidades h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 210px;
+    min-height: 270px;
+    padding: 25px 18px;
+    background-color: #e8f3fb;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card i {
+    font-size: 42px;
+    color: #0b6eb8;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* COMO UTILIZAR */
+
+.como-usar {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.como-usar h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.passos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.passo {
+    width: 240px;
+    position: relative;
+    padding: 20px;
+}
+
+.passo span {
+    display: inline-block;
+    background-color: #1478c9;
+    color: white;
+    width: 42px;
+    height: 42px;
+    padding-top: 11px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.passo i {
+    display: block;
+    font-size: 40px;
+    color: #0b6eb8;
+    margin-bottom: 15px;
+}
+
+.passo h3 {
+    margin-bottom: 12px;
+}
+
+.passo p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* PÚBLICO E BENEFÍCIOS */
+
+.informacoes {
+    background-color: #f7fafc;
+    padding: 70px 10%;
+    display: flex;
+    gap: 80px;
+}
+
+.publico,
+.beneficios {
+    width: 50%;
+}
+
+.informacoes h2 {
+    font-size: 28px;
+    color: #082d6b;
+    margin-bottom: 20px;
+}
+
+.publico p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.publico ul {
+    list-style: none;
+}
+
+.publico li {
+    margin: 12px 0;
+}
+
+.publico li::before {
+    content: "✓";
+    background-color: #1265a8;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.beneficio i {
+    width: 45px;
+    height: 45px;
+    background-color: #dceefa;
+    color: #0b6eb8;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.beneficio p {
+    line-height: 1.4;
+}
+
+
+/* CHAMADA FINAL */
+
+.chamada-final {
+    margin: 50px 7%;
+    padding: 45px 6%;
+    background: linear-gradient(100deg, #052d61, #0b4e8c);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.chamada-final h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.chamada-final p {
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+.botao-final {
+    text-decoration: none;
+    background-color: #0a9b45;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.botao-final i {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    border-top: 1px solid #dddddd;
+    padding: 35px 10%;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-rodape {
+    width: 170px;
+    height: auto;
+}
+
+.conteudo-rodape {
+    flex: 1;
+}
+
+.logo-sp {
+    width: 260px;
+    height: auto;
+}
+
+.separador {
+    width: 2px;
+    height: 90px;
+    background-color: #cccccc;
+}
+
+footer h3 {
+    color: #082d6b;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 6px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto,
+    .hero-imagem {
+        width: 100%;
+    }
+
+    .hero-imagem {
+        margin-top: 40px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .titulo-secao,
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    .publico,
+    .beneficios {
+        width: 100%;
+    }
+
+    .chamada-final {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .titulo-secao h2,
+    .funcionalidades h2,
+    .como-usar h2 {
+        font-size: 26px;
+    }
+}
